@@ -1,5 +1,12 @@
-#https://github.com/Shamya/FleissKappa
+"""
+Ref.
+1. https://github.com/Shamya/FleissKappa
+2. https://blog.csdn.net/qq_31113079/article/details/76216611
+3. https://notebook.community/amirziai/learning/statistics/Inter-rater%20agreement%20kappas
+"""
 
+import pandas as pd
+import numpy as np
 def checkInput(rate, n):
     """ 
     Check correctness of the input matrix
@@ -46,74 +53,40 @@ def fleissKappa(rate,n):
     
     return kappa
 
+
+def create_labeler_set(path):
+    """
+    (N, n, k) = (Sample, labeler, grading)
+    
+    """
+    sample_list_arr=[]
+    labeler = ['A','B','C','D','E']
+    df = pd.read_csv(path,encoding = 'UTF-8')
+    for i in range(len(df['Order'])):
+        label_count=[0,0,0,0]
+        print(i)
+        for j in range(len(labeler)):
+            #print(i,j)
+            print('labeler:',labeler[j], df[labeler[j]][i])
+            if df[labeler[j]][i]==1:
+                label_count[0]=label_count[0]+1
+            elif df[labeler[j]][i]==2:
+                label_count[1]=label_count[1]+1
+            elif df[labeler[j]][i]==3:
+                label_count[2]=label_count[2]+1
+            elif df[labeler[j]][i]==4:
+                label_count[3]=label_count[3]+1
+            else:
+                print('error')
+        sample_list_arr.append(label_count)
+        print(label_count)
+    print(sample_list_arr)
+    print(len(sample_list_arr))
+    return sample_list_arr
+
+
 if __name__ == "__main__":
-    
-    print("Example run to calculate Fleiss' Kappa")
-    
-    print("\nTest case 1 - Fleiss 1971")
-    #Fleiss, 1971 example
-
-    '''
-    rate = \
-    [
-        [0,0,0,6,0],
-        [0,3,0,0,3],
-        [0,1,4,0,1],
-        [0,0,0,0,6],
-        [0,3,0,3,0],
-        [2,0,4,0,0],
-        [0,0,4,0,2],
-        [2,0,3,1,0],
-        [2,0,0,4,0],
-        [0,0,0,0,6],
-        [1,0,0,5,0],
-        [1,1,0,4,0],
-        [0,3,3,0,0],
-        [1,0,0,5,0],
-        [0,2,0,3,1],
-        [0,0,5,0,1],
-        [3,0,0,1,2],
-        [5,1,0,0,0],
-        [0,2,0,4,0],
-        [1,0,2,0,3],
-        [0,0,0,0,6],
-        [0,1,0,5,0],
-        [0,2,0,1,3],
-        [2,0,0,4,0],
-        [1,0,0,4,1],
-        [0,5,0,1,0],
-        [4,0,0,0,2],
-        [0,2,0,4,0],
-        [1,0,5,0,0],
-        [0,0,0,0,6]
-    ]
-    kappa = fleissKappa(rate,6)
-    assert(kappa==0.43)
-    '''
-
-    rate = \
-        [
-            [0, 1,  4,  0],
-            [3,	1,	1,	0],
-            [0,	0,	2,	3],
-            [0,	2,	3,	0],
-            [0,	5,	0,	0],
-            [2,	2,	1,	0],
-            [2,	1,	2,	0],
-            [1,	3,	1,	0],
-            [5,	0,	0,	0],
-            [1,	3,	1,	0],
-            [0,	2,	3,	0],
-            [2,	2,	1,	0],
-            [1,	2,	2,	0],
-            [0,	2,	3,	0],
-            [0,	3,	2,	0],
-            [0,	1,	4,	0],
-            [0,	1,	4,	0],
-            [2,	2,	1,	0],
-            [2,	3,	0,	0],
-            [0,	0,	5,	0]
-
-        ]
-    kappa = fleissKappa(rate,5)
+    path_csv = r'label_2022_0827.csv'
+    sample_list_arr = create_labeler_set(path_csv)
+    kappa = fleissKappa(sample_list_arr,5)
     assert(kappa)
