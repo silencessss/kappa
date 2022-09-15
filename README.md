@@ -1,4 +1,5 @@
 # kappa
+A statistic that is used to measure inter-rater reliability (and also intra-rater reliability) for qualitative (categorical) items.
 - 評分者間信度(Inter-rater reliability): 不同一個人在**乙個**實例中給出的評分一致性得分
 - 評估者內信度(Intra-rater reliability): 相同一個人在**多個**實例中給出的評分一致性得分
 - 統計方式: Cohen's kappa, Fleiss' kappa
