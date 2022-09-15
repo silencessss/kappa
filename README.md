@@ -44,3 +44,5 @@ Env.:
 - https://blog.csdn.net/qq_31113079/article/details/76216611
 - https://notebook.community/amirziai/learning/statistics/Inter-rater%20agreement%20kappas
 - https://www.twblogs.net/a/5b7cf6d22b71770a43dd5451
+- https://stackoverflow.com/questions/11528150/inter-rater-agreement-in-python-cohens-kappa/41028077#41028077
+- https://www.nltk.org/api/nltk.metrics.agreement.html
