@@ -2,7 +2,8 @@
 
 ## § Abstract
 Kappa has two type: one is Cohen's kappa, another is Fleiss's kappa.
-
+- Cohen's kappa: 適用於兩名評估者。
+- Fleiss' kappa: 適用於任何固定數量的評估者。
 
 
 ## § Interpretation of Kappa
@@ -35,3 +36,4 @@ Env.:
 - https://github.com/Shamya/FleissKappa
 - https://blog.csdn.net/qq_31113079/article/details/76216611
 - https://notebook.community/amirziai/learning/statistics/Inter-rater%20agreement%20kappas
+- https://www.twblogs.net/a/5b7cf6d22b71770a43dd5451
