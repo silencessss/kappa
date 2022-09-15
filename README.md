@@ -38,6 +38,7 @@ Env.:
 
 
 ## § Ref.
+- Cohen, Jacob. “A Coefficient of Agreement for Nominal Scales.” Educational and Psychological Measurement 20 (1960): 37 - 46.
 - https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html
 - https://github.com/Shamya/FleissKappa
 - https://blog.csdn.net/qq_31113079/article/details/76216611
