@@ -12,14 +12,14 @@ Kappa has two type: one is Cohen's kappa, another is Fleiss's kappa.
 
 ## § Interpretation of Kappa
 
-| Kappa | Agreement |
+| Kappa | Agreement | 一致性 |
 |:---:| :---: |
-|<0 | Less than chance |
-| 0.01 ~ 0.20 | Slight |
-| 0.21 ~ 0.40 | Fair |
-| 0.41 ~ 0.60 | Moderate |
-| 0.61 ~ 0.80 | Substantial |
-| 0.81 ~ 0.99 | Almost |
+|<0 | Less than chance | 幾乎沒有一致性 |
+| 0.01 ~ 0.20 | Slight | 極低的一致性
+| 0.21 ~ 0.40 | Fair   | 一般的一致性|
+| 0.41 ~ 0.60 | Moderate | 中等的一致性|
+| 0.61 ~ 0.80 | Substantial | 高度的一致性|
+| 0.81 ~ 0.99 | Almost | 幾乎完全一致性|
 
 ![image](https://user-images.githubusercontent.com/32260565/190395367-1153b7a4-b678-4d5f-ae73-5ee1d70f8de8.png)
 
