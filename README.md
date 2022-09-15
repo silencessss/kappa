@@ -32,7 +32,8 @@ This function computes Cohen’s kappa. It's defined as $k = (p_o-p_e)/(1-p_e)$ 
 > 該函數計算 Cohen 的 kappa。 它被定義為 $k = (p_o-p_e)/(1-p_e)$ 其中 $p_o$ 是分配給任何樣本的標籤的經驗一致性概率（觀察到的一致性比率）， $p_e$ 是預期一致性 當兩個註釋者隨機分配標籤時。 此外 $p_e$ 是使用每個註釋者在類標籤上的經驗先驗估計的。
 
 
-### Flessis's kappa
+### Fleiss's kappa
+Fleiss' kappa (named after Joseph L. Fleiss) is a statistical measure for assessing the reliability of agreement between a fixed number of raters when assigning categorical ratings to a number of items or classifying items.
 
 ## § Implement detail
 Env.:
@@ -41,6 +42,7 @@ Env.:
 
 ## § Ref.
 - Cohen, Jacob. “A Coefficient of Agreement for Nominal Scales.” Educational and Psychological Measurement 20 (1960): 37 - 46.
+- Fleiss, J. L. (1971) "Measuring nominal scale agreement among many raters." Psychological Bulletin, Vol. 76, No. 5 pp. 378–382.
 - https://scikit-learn.org/stable/modules/generated/sklearn.metrics.cohen_kappa_score.html
 - https://github.com/Shamya/FleissKappa
 - https://blog.csdn.net/qq_31113079/article/details/76216611
