@@ -26,6 +26,8 @@ Kappa has two type: one is Cohen's kappa, another is Fleiss's kappa.
 
 ## § Kappa type
 ### Cohen Kappa
+This function computes Cohen’s kappa. It's defined as $k = (p_o-p_e)/(1-p_e)$ where $p_o$ is the empirical probability of agreement on the label assigned to any samples (the observed agreement ratio), and $p_e$ is the expected agreement when both annotators assign labels randomly. Furthermore, $p_e$ is estimated using a per-annotator empirical prior over the class labels.
+> 該函數計算 Cohen 的 kappa。 它被定義為 $k = (p_o-p_e)/(1-p_e)$ 其中 $p_o$ 是分配給任何樣本的標籤的經驗一致性概率（觀察到的一致性比率）， $p_e$ 是預期一致性 當兩個註釋者隨機分配標籤時。 此外 $p_e$ 是使用每個註釋者在類標籤上的經驗先驗估計的。
 
 
 ### Flessis's kappa
