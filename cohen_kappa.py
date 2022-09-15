@@ -40,10 +40,11 @@ def Calculate_Cohen_Kappa_more_raters(raters):
     data = np.zeros((len(raters), len(raters)))
     for j, k in list(itertools.combinations(range(len(raters)), r=2)):
         data[j, k] = cohen_kappa_score(raters[j], raters[k])
+        data[k, j] = cohen_kappa_score(raters[k], raters[j])
     fig, ax = plt.subplots(figsize=(10,8)) 
     sns.heatmap(
         data, 
-        mask=np.tri(len(raters)),
+        #mask=np.tri(len(raters)),
         annot=True, 
         linewidths=0.5,
         vmin=0, 
