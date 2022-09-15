@@ -13,7 +13,7 @@ Kappa has two type: one is Cohen's kappa, another is Fleiss's kappa.
 ## § Interpretation of Kappa
 
 | Kappa | Agreement | 一致性 |
-|:---:| :---: |
+|:---:| :---: | :---: |
 |<0 | Less than chance | 幾乎沒有一致性 |
 | 0.01 ~ 0.20 | Slight | 極低的一致性
 | 0.21 ~ 0.40 | Fair   | 一般的一致性|
