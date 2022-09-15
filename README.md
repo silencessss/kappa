@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/scikit--learn-1.1.2-orange)
+![](https://img.shields.io/badge/seaborn-0.11.2-9cf)
 # kappa
 A statistic that is used to measure inter-rater reliability (and also intra-rater reliability) for qualitative (categorical) items.
 - 評分者間信度(Inter-rater reliability): 不同一個人在**乙個**實例中給出的評分一致性得分
