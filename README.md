@@ -1,4 +1,7 @@
 # kappa
+- 評分者間信度(Inter-rater reliability): 不同一個人在**乙個**實例中給出的評分一致性得分
+- 評估者內信度(Intra-rater reliability): 相同一個人在**多個**實例中給出的評分一致性得分
+- 統計方式: Cohen's kappa, Fleiss' kappa
 
 ## § Abstract
 Kappa has two type: one is Cohen's kappa, another is Fleiss's kappa.
