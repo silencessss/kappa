@@ -34,7 +34,7 @@ This function computes Cohen’s kappa. It's defined as $k = (p_o-p_e)/(1-p_e)$ 
 
 ### Fleiss's kappa
 Fleiss' kappa (named after Joseph L. Fleiss) is a statistical measure for assessing the reliability of agreement between a fixed number of raters when assigning categorical ratings to a number of items or classifying items.
-
+> Fleiss 的 kappa（以 Joseph L. Fleiss 命名）是一種統計量度，用於評估固定數量的評估者在對多個項目進行分類評級或對項目進行分類時的一致性可靠性。
 
 ## § Ref.
 - Cohen, Jacob. “A Coefficient of Agreement for Nominal Scales.” Educational and Psychological Measurement 20 (1960): 37 - 46.
