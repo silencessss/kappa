@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/scikit--learn-1.1.2-orange)
 ![](https://img.shields.io/badge/seaborn-0.11.2-9cf)
 # kappa
+Kappa是一個在醫學領域中用於衡量評估者一致性和可靠性的統計方法，特別適用於評估資料中的分類或分組情況。這種方法不僅在醫學領域廣泛應用，還在其他領域，如心理學、教育研究和社會科學中具有重要價值。Kappa統計量的主要目標是評估不同評估者（通常是醫生、研究人員或評審）之間對於某一特定事件或現象的評估一致性。這種一致性評估對於確保測量結果的準確性和可信度至關重要。例如，在醫學診斷中，多名醫生可能需要獨立評估一位患者的病情，Kappa統計可以幫助確定他們的評估是否一致，進而提高診斷的準確性。Kappa統計方法基於評估者的觀測結果以及隨機一致性的期望，計算出一個值，該值可解釋為一致性的程度。如果Kappa值接近1，則表示評估者之間的一致性很高，而如果接近0，則表示一致性很低。此外，Kappa值還可以用來評估不同評估者之間的偏差或誤差，有助於識別並改進評估過程的問題。總而言之，Kappa統計方法在醫學和其他領域中用於評估評估者的一致性和可靠性，有助於提高測量和評估的準確性，並確保研究結果和臨床診斷的可信度。
+
 A statistic that is used to measure inter-rater reliability (and also intra-rater reliability) for qualitative (categorical) items.
 - 評分者間信度(Inter-rater reliability): 不同一個人在**乙個**實例中給出的評分一致性得分
 - 評估者內信度(Intra-rater reliability): 相同一個人在**多個**實例中給出的評分一致性得分
